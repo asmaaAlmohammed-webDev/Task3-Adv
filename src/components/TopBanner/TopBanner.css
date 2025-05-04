@@ -1,0 +1,169 @@
+.TopBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 14px 0;
+    margin-bottom: 14px;
+    background-color: var(--orange90-color);
+    border: 2px solid var(--grey15-color);
+    position: relative;
+
+    .img1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    .img2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    .img3 {
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+
+    .img4 {
+        position: absolute;
+        bottom: 0;
+        right: 30%;
+    }
+
+    .img5, .img6, .img7, .img8 {
+        display: none;
+    }
+
+    p {
+        font-family: Outfit;
+        font-weight: 500;
+        font-size: 20px;
+
+        img {
+            margin-left: 14px;
+            width: 30px;
+            vertical-align: middle;
+        }
+
+    }
+}
+
+.top-section {
+    padding-top: 18px;
+}
+
+@media (max-width:1919px) {
+    .TopBanner {
+        padding: 12px 0;
+        border-radius: 6px;
+
+        .img1, .img2, .img7, .img8 {
+            display: none;
+        }
+
+        .img5 {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .img6 {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .img3 {
+            position: absolute;
+            top: 0;
+            left: 28%;
+            width: 50px;
+        }
+
+        .img4 {
+            position: absolute;
+            bottom: 0;
+            right: 30%;
+            width: 32px;
+
+        }
+
+        p {
+            font-size: 16px;
+
+            img {
+                width: 24px;
+            }
+        }
+    }
+
+    .top-section {
+        padding-top: 16px;
+    }
+}
+
+@media (max-width:1200px) {
+    .TopBanner {
+        .img3 {
+            left: 20%;
+            width: 45px;
+        }
+
+        .img4 {
+            right: 23%;
+            width: 25px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .TopBanner {
+        .img1, .img2, .img5, .img6 {
+            display: none;
+        }
+
+        .img3 {
+            left: 0;
+            width: 32px;
+        }
+
+        .img4 {
+            right: 0;
+            width: 22px;
+        }
+
+        .img7 {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .img8 {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        p {
+            font-size: 14px;
+
+            img {
+                width: 20px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

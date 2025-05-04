@@ -1,0 +1,215 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: calc(100vh - 118px);
+    margin-top: 180px;
+
+    img {
+        width: 765px;
+        align-self: self-start;
+    }
+
+    .content {
+
+        p:first-child {
+            font-family: Outfit;
+            font-weight: 500;
+            font-size: 22px;
+            color: var(--grey15-color);
+            border-bottom: 2px solid var(--grey15-color);
+            padding-bottom: 6px;
+            margin-bottom: 6px;
+            width: 357px;
+        }
+
+        .title {
+            font-family: Raleway;
+            font-weight: 800;
+            font-size: 54px;
+            color: var(--grey10-color);
+            margin-bottom: 30px;
+
+            span {
+                color: var(--orange65-color);
+            }
+        }
+
+        .desc {
+            font-family: Outfit;
+            font-weight: 500;
+            font-size: 20px;
+            color: var(--grey20-color);
+            width: 765px;
+        }
+
+        .rates {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 765px;
+            border-radius: 12px;
+            border: 2px solid var(--grey15-color);
+            padding: 24px 50px;
+            background-color: var(--orange95-color);
+            box-shadow: 8px 8px 0px 1px #FFBE99;
+            margin-top: 60px;
+
+            .num {
+                font-family: Outfit;
+                font-weight: 800;
+                font-size: 44px;
+                color: var(--grey15-color);
+            }
+
+            .count p {
+                font-family: Outfit;
+                font-weight: 500;
+                font-size: 18px;
+                color: var(--grey15-color);
+            }
+
+        }
+    }
+}
+
+/* responsive */
+
+@media (max-width:1919px) {
+    .hero {
+
+        img {
+            width: 615px;
+            margin-top: 60px;
+        }
+
+        .content {
+
+            p:first-child {
+                font-size: 18px;
+                width: 293px;
+            }
+
+
+            .title {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+
+            .desc {
+                width: 615px;
+            }
+
+            .rates {
+                width: 100%;
+                padding: 20px 40px;
+                box-shadow: 6px 6px 0px 1px #FFBE99;
+
+                .num {
+                    font-size: 2rem;
+                }
+
+                .count p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1300px) {
+    .hero {
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 20px;
+        height: max-content;
+
+        img {
+            width: 70%;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+
+        .content {
+            p:first-child {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            .title {
+                font-size: 30px;
+                margin: 20px 0 15px 0;
+            }
+
+            .desc {
+                width: 100%;
+
+            }
+
+            .rates {
+                padding: 15px 30px;
+                margin-bottom: 150px;
+
+                .num {
+                    font-size: 1.3rem;
+                }
+
+                .count p {
+                    font-size: .7rem;
+                }
+            }
+
+
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .hero {
+
+        img {
+            width: 100%;
+            margin-top: 50px;
+        }
+        .content {
+            width: 100%;
+
+            p:first-child {
+                width: 100%;
+                font-size: 16px;
+                margin: 0px auto;
+            }
+
+
+            .title {
+                font-size: 30px;
+                margin-bottom: 18px;
+            }
+
+            .desc {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .rates {
+                flex-wrap: wrap;
+                width: 100%;
+                padding: 40px;
+                box-shadow: 4px 4px 0px 1px #FFBE99;
+                margin-bottom: 80px;
+
+                .count {
+                    border-bottom: 2px solid var(--grey15-color);
+                    width: 100%;
+
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

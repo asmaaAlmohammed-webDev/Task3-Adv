@@ -1,0 +1,143 @@
+.navigate-card {
+    background-color: var(--white-color);
+    box-shadow: 6px 6px 0px 2px var(--grey-shadow);
+    width: 773px;
+    border-radius: 12px;
+    border: 2px solid var(--grey15-color);
+    padding: 80px;
+
+    .title {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 48px;
+        color: var(--grey10-color);
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    img {
+        width: 613px;
+    }
+
+    .desc {
+        font-family: Outfit;
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--grey30-color);
+        text-align: center;
+        margin: 50px 0 80px 0;
+        height: 120px;
+
+    }
+
+    .more {
+        border-radius: 10px;
+        border: 2px solid var(--grey15-color);
+        box-shadow: 4px 4px 0px 2px var(--grey-shadow);
+        padding: 18px 0 18px 0;
+        background-color: var(--orange90-color);
+        display: flex;
+        justify-content: center;
+
+        a {
+            font-family: Outfit;
+            font-weight: 500;
+            font-size: 20px;
+            color: var(--grey20-color);
+            text-decoration: none;
+
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    }
+
+}
+
+/* responsive */
+@media (max-width:1919px) {
+    .navigate-card {
+        box-shadow: 4px 4px 0px 2px var(--grey-shadow);
+        width: 620px;
+        border-radius: 10px;
+        padding: 60px;
+
+
+
+        .title {
+            font-size: 34px;
+            margin-bottom: 24px;
+
+        }
+
+        img {
+            width: 500px;
+        }
+
+        .desc {
+            font-size: 16px;
+            margin: 40px 0 60px 0;
+
+        }
+
+        .more {
+            border-radius: 8px;
+            box-shadow: 4px 4px 0px 2px var(--grey-shadow);
+
+            a {
+                font-size: 18px;
+
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .navigate-card {
+        width: 358px;
+        padding: 40px;
+
+        .title {
+            font-size: 28px;
+            margin-bottom: 20px;
+
+        }
+
+        img {
+            width: 278px;
+        }
+
+        .desc {
+            margin: 30px 0 40px 0;
+
+        }
+
+        .more {
+            border-radius: 6px;
+            padding: 16px 0 16px 0;
+            box-shadow: 2px 2px 0px 1px var(--grey-shadow);
+
+
+            a {
+                font-size: 16px;
+
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

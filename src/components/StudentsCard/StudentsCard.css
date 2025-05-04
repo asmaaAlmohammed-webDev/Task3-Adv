@@ -1,0 +1,135 @@
+.student-card {
+    width: 498.6666px;
+    height: 570px;
+    border-radius: 12px;
+    border: 2px solid var(--grey15-color);
+    padding: 50px;
+    background-color: var(--white-color);
+    box-shadow: 6px 6px 0px 2px var(--grey-shadow);
+    position: relative;
+
+    .color-div {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 125px;
+        height: 384px;
+        border: 2px solid var(--grey15-color);
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        background-color: var(--orange95-color);
+    }
+
+    .content {
+        text-align: center;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .title {
+            font-family: Raleway;
+            font-weight: 700;
+            font-size: 28px;
+            color: var(--grey10-color);
+            margin: 20px 0;
+        }
+
+        .desc {
+            width: 398.6666px;
+            font-family: Outfit;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            color: var(--grey30-color);
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+}
+
+
+/* Responsive */
+@media (max-width:1919px) {
+    .student-card {
+        width: 400px;
+        height: 433px;
+        border-radius: 10px;
+        padding: 40px;
+
+        .color-div {
+            width: 103px;
+            height: 282px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .content {
+            bottom: 30px;
+
+            .title {
+                font-size: 24px;
+            }
+
+            .desc {
+                width: 320px;
+                font-size: 16px;
+            }
+        }
+
+        img {
+            width: 80%;
+            top: 30px;
+        }
+    }
+}
+
+@media (max-width:1300px) {
+    .student-card {
+        width: 500px;
+        height: 450px;
+          .content{
+            bottom:18px;
+          }
+    }
+}
+
+@media (max-width:768px) {
+    .student-card {
+        width: 358px;
+        height: 368px;
+        padding: 30px;
+
+        .color-div {
+            width: 93px;
+            height: 237px;
+        }
+
+        .content {
+            bottom: 10px;
+
+            .title {
+                font-size: 22px;
+            }
+
+            .desc {
+                width: 298px;
+            }
+        }
+
+        img {
+            width: 298px;
+            height: 191px;
+            object-fit: contain;
+            top: 25px;
+        }
+
+    }
+}

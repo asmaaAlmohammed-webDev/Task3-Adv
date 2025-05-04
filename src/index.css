@@ -1,0 +1,111 @@
+/* Google Font: Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* Google Font: Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+:root {
+  --bg-color: #FFF5F0;
+  --white-color: #fff;
+  --black-color: #000;
+  --grey10-color: #1A1A1A;
+  --grey15-color: #262626;
+  --grey20-color: #333333;
+  --grey30-color: #4C4C4D;
+  --grey40-color: #656567;
+  --grey-shadow: #1E1E1E;
+  --orange65-color: #FF8D4D;
+  --orange75-color: #FFAE80;
+  --orange80-color: #FFBE99;
+  --orange95-color: #FFEFE5;
+  --orange90-color: #FFDECC;
+  --orange97-color: #FFF5F0;
+  --orange-shadow: #FFBE99;
+}
+
+.bg-color {
+  background-color: var(--bg-color);
+}
+
+.px-160 {
+  padding-left: 8.3333%;
+  padding-right: 8.3333%;
+
+}
+
+.px-50 {
+  padding-left: 2.60416%;
+  padding-right: 2.60416%;
+}
+
+.mx-50 {
+  margin-left: 2.60416%;
+  margin-right: 2.60416%;
+}
+
+.m-bottom {
+  margin-bottom: 200px;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray20-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--orange65-color), var(--orange80-color));
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grey20-color);
+}
+
+
+/* Responsive */
+@media (max-width:1919px) {
+  .m-bottom {
+    margin-bottom: 150px;
+  }
+/* 
+  .px-160 {
+    padding-left: 10.1111%;
+    padding-right: 10.1111%;
+  } */
+
+  .mx-50 {
+    margin-left: 5.5555%;
+    margin-right: 5.5555%;
+  }
+}
+
+@media (max-width:1300px) {
+  .m-bottom {
+    margin-bottom: 80px;
+  }
+/* 
+  .px-160{
+    padding-left: 15.1025%;
+    padding-right: 15.1025%;
+  } */
+
+  .mx-50 {
+    margin-left: 4.1025%;
+    margin-right: 4.1025%;
+  }
+
+}
