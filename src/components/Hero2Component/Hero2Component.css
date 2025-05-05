@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    /* height: calc(100vh - 118px); */
+    height: calc(100vh - 168px);
     border-radius: 12px;
     border: 2px solid var(--grey15-color);
     padding: 150px 120px;
@@ -15,11 +15,13 @@
     .left-side {
         display: inline-block;
         width: max-content;
-       .desc1{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-       }
+        margin-left: 20px;
+
+        .desc1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .desc1 {
@@ -96,7 +98,9 @@
 
 @media (max-width:768px) {
 
+
     .hero2 {
+        height: max-content;
         padding: 50px 30px;
 
         .desc1 {

@@ -86,8 +86,9 @@
     }
 
 }
+
 .history-card::before {
-    position : absolute;
+    position: absolute;
     content: '';
     left: -10px;
     top: 50%;
@@ -96,6 +97,7 @@
     width: 2px;
     height: 165%;
 }
+
 .no-before::before {
     display: none !important;
     width: 0px !important;
@@ -136,7 +138,8 @@
         justify-content: start;
         flex-wrap: wrap;
     }
-    .history-card::before{
+
+    .history-card::before {
         height: 138%;
         top: 25%;
     }
@@ -146,6 +149,12 @@
     .history-card {
         gap: 50px;
         width: 100%;
+
+        div:first-child {
+            .line {
+                width: 27px;
+            }
+        }
 
         .content {
             .title {
@@ -166,8 +175,16 @@
             }
         }
     }
-    .history-card::before{
-        height: 130%;
+
+    .history-card::before {
+        height: 135%;
+        top: 20%;
+    }
+}
+
+@media (max-width:390px) {
+    .history-card::before {
+        height: 128%;
         top: 20%;
     }
 }

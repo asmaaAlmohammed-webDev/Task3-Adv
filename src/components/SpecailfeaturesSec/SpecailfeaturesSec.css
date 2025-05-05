@@ -1,0 +1,39 @@
+.Specail-feauters-sec {
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .title-component {
+        .desc {
+            width: 55%;
+        }
+    }
+
+}
+
+/* Responsive */
+
+@media (max-width:1919px) {
+    .Specail-feauters-sec {
+        .title-component {
+            .desc {
+                width: 64%;
+            }
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+    .Specail-feauters-sec {
+        .title-component {
+            .desc {
+                width: 100%;
+            }
+        }
+    }
+}

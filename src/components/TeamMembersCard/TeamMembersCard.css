@@ -134,6 +134,7 @@
 @media (max-width:768px) {
     .team-members-card {
         width: 100%;
+        height: max-content;
         padding: 30px;
 
         div:first-child {
@@ -151,7 +152,7 @@
         }
 
         .info-person {
-            width: 90%;
+            width: 100%;
             padding: 20px;
 
             .qualification {

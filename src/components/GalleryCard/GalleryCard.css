@@ -4,6 +4,7 @@
     padding: 200px 50px 50px 50px;
     background-color: var(--white-color);
     box-shadow: 6px 6px 0px 2px var(--grey-shadow);
+    margin-top: 100px;
 
     .imgs {
         margin-top: -400px;
@@ -91,7 +92,7 @@
 
             img {
                 width: 288px;
-       
+
             }
         }
 

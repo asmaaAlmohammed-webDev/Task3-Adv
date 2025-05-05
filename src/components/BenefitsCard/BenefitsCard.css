@@ -8,7 +8,6 @@
     box-shadow: 6px 6px 0px 2px var(--grey-shadow);
     position: relative;
     margin-bottom: 20px;
-    transition: all 3s ease-in;
 
     .title {
         font-family: Raleway;
@@ -40,9 +39,6 @@
     }
 }
 
-.benefits-card:hover {
-    box-shadow: 20px 5px 8px var(--orange65-color);
-}
 
 /* responsive */
 @media (max-width:1919px) {
@@ -73,7 +69,8 @@
 
 @media (max-width:768px) {
     .benefits-card {
-        width: 358px;
+        width: 100%;
+        height: max-content;
         padding: 50px 40px 30px 30px;
         box-shadow: 4px 4px 0px 1px var(--grey-shadow);
 

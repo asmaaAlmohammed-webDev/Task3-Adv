@@ -1,9 +1,43 @@
 .mission-vision-sec {
-    .row-cards{
+    .row-cards {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
         gap: 30px;
     }
+    .title-component {
+        .desc {
+            width: 65%;
+        }
+    }
+}
+@media (max-width:1919px) {
+  .mission-vision-sec{
+    .title-component {
+        .desc {
+            width: 56%;
+        }
+    }
+  }
+
+}
+@media (max-width:1300px) {
+
+
+    .mission-vision-sec {
+        .row-cards {
+            flex-direction: column;
+        }
+    }
+
+}
+@media (max-width:768px) {
+  .mission-vision-sec{
+    .title-component {
+        .desc {
+            width: 100%;
+        }
+    }
+  }
+
 }
