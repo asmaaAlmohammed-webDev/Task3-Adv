@@ -48,7 +48,7 @@ const GalleryCard = ({ title, desc, images = [] }) => {
     );
   };
   return (
-    <div className="gallery-card  ">
+    <div className="gallery-card  "> 
       <div className="imgs">
         {getVisibleCards()?.map((img, index) => (
           <img key={index} src={img} alt="" />
